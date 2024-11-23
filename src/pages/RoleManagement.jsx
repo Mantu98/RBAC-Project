@@ -10,7 +10,7 @@ const RoleManagement = () => {
     permissions: [],
   });
 
-  const allPermissions = ["Read", "Write", "Delete", "Update"]; // Define all available permissions
+  const allPermissions = ["Read", "Write", "Delete", "Update"];
 
   useEffect(() => {
     axios.get("/api/roles").then((response) => setRoles(response.data));
